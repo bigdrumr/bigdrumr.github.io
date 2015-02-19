@@ -4,13 +4,13 @@
 	February 2015
 */
 body {
-	background-color: #536E3E;
+	background-color: #171800;
 	color: #FFF;
 }
 img {
 	width: 100%;
 	padding: 5px;
-	border-radius: 10%;	
+	border-radius: 30%;	
 }
 .avatar {
 	width: 25%;	
@@ -19,7 +19,7 @@ img {
 }
 button.btn-primary {
 	background-color: inherit;
-	border: 1px solid #FFF;
+	border: 1px solid #A7AE00;
 }
 
 .name-tag {
@@ -28,7 +28,7 @@ button.btn-primary {
 .main-item {
 	padding: 40px 0;
 	margin: 10px 0;
-	border: 1px solid #FFF;
+	border: 1px solid #A7AE00;
 	background-color: inherit;
 	transition: all 0.5;
 }
@@ -47,7 +47,6 @@ button.btn-primary:focus
 	opacity: 0.8;
 	color: #536E3E;
 	outline: 0;
-	box-shadow: 0;
 }
 
 .main-item:active {
