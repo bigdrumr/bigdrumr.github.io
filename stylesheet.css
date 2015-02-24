@@ -41,12 +41,12 @@ div.btn {
 	margin: 10px 0;
 	border: 1px solid #6EF046;
 	background-color: inherit;
-	transition: all 0.5;
+	transition: all 0.2s ease;
 }
 .main-item a {
 	text-decoration: none;
 	color: #FFF;
-	transition: all 0.5;
+	transition: all 0.2s ease;
 }
 .main-item:hover,
 div.btn:hover,
