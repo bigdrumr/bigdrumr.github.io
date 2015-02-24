@@ -12,6 +12,9 @@ img {
 	padding: 5px;
 	border-radius: 50%;	
 }
+a {
+	text-decoration: none !important;
+}
 i.fa {
 	margin-left: 5px;
 	color: #FFF !important;
@@ -38,16 +41,16 @@ div.btn {
 	margin: 20px 0;
 }
 .main-item {
+	height: 112px;
 	padding: 40px 0;
 	margin: 10px 0;
 	border: 1px solid #6EF046;
 	background-color: inherit;
-	transition: all 0.2s ease;
+	transition: all 0.15s ease;
 }
-.main-item a {
-	text-decoration: none;
+a .main-item {
 	color: #FFF;
-	transition: all 0.2s ease;
+	transition: all 0.15s ease;
 }
 .main-item:hover,
 div.btn:hover,
@@ -56,13 +59,13 @@ button.btn-primarydiv.btn {
 	background-color: #994D25;	
 	outline: 0;
 }
-.main-item:hover a {
-	color: #4D220C;
+a .main-item:hover {
+	color: #48484D;
 }
 .main-item:active {
 	background-color: #2C2C33;
 }
-.main-item:active a {
+a .main-item:active {
 	color: #48484D;
 }
 
