@@ -98,6 +98,9 @@ div.col-sm-3:nth-child(2) {
 	.grid-title.one {
 		margin-top: 80px;
 	}
+	.offset {
+		margin-left: calc(8.33333333% + 50px);
+	}
 }
 /* iPads (portrait) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
@@ -112,5 +115,8 @@ div.col-sm-3:nth-child(2) {
 		margin-top: 20px;
 		margin-bottom: 40px;
 		float: none;	
+	}
+	.offset {
+		margin-left: calc(8.33333333% + 50px);
 	}
 }
