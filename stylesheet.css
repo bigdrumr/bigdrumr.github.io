@@ -74,3 +74,38 @@ div.col-sm-3:nth-child(2) {
 	margin-left: calc(8.33333333% + 50px);
 }
 
+
+/*===============
+	RESPONSIVE OFFSETS*/
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+	.avatar {
+		width: 50%;
+		margin-top: 20px;
+		float: right;
+	}
+}
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+	.avatar {
+		width: 100%;
+		margin-top: 20px;
+	}
+}
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+	.grid-title.one {
+		margin-top: 80px;
+	}
+}
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+	.grid-title.one {
+		margin-top: 80px;
+	}
+}
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+
+}
