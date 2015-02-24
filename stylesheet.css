@@ -92,6 +92,9 @@ div.col-sm-3:nth-child(2) {
 		width: 100%;
 		margin-top: 20px;
 	}
+	i.fa {
+		font-size: 30px;
+	}
 }
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
