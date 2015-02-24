@@ -86,6 +86,7 @@ div.col-sm-3:nth-child(2) {
 		float: right;
 	}
 	i.fa {
+		margin: 5px;
 		font-size: 30px;
 	}
 	.grid-title.one {
