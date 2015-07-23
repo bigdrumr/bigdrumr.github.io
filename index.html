@@ -5,113 +5,76 @@
     	<title>Terry's Portfolio</title>
 
     	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+    	<!-- less.js -->
+    	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js"></script>
     	<!-- TwitterBootstrap CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 		<!-- FontAwesome CDN -->
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.css">
-
 		<!-- Custom CSS -->
-        <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+        <link rel="stylesheet" type="text/css" href="css/main.css"/>
 
 	</head>
 	<body>
 
-	<div class="container-fluid">
-		<div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
-			<h1 class="title">Hello World!</h1>
-			<h2 class="h4">I'm Terry Griffin</h2>
-			<p class="small">Budding UI/UX Developer</p>
-			<div class="social visible-xs text-left">
-				<a href="https://drive.google.com/file/d/0B9b2obkDLa_bUHk2X0EweEVWS2s/view?usp=sharing"><i class="fa fa-graduation-cap"></i></a>
-				<a href="https://github.com/bigdrumr"><i class="fa fa-github"></i></a>
-				<a href="mailto:jtgrffn@gmail.com"><i class="fa fa-envelope"></i></a>
-				<a href="https://www.facebook.com/people/Terry-Griffin/100006449551389"><i class="fa fa-facebook-square"></i></a>
+	<section class="masthead">
 
+		<nav id="navbar">
+			<div class="title">
+				<h1 class="title">Hello World!</h1>
+				<h2 class="h4">I'm Terry Griffin</h2>
+				<p class="small">Budding UI/UX Developer</p>
 			</div>
-		</div>
-		<!-- VISIBLE XS -->
-		<div class="visible-xs col-xs-6">
-			<div class="avatar center-block">
+
+			<!-- HIDDEN XS -->
+			<div class="avatar">
 				<img src="img/JTG_fiddle.jpg">
 			</div>
-		</div>
-		<!-- HIDDEN XS -->
-		<div class="hidden-xs col-sm-6 col-md-6 col-lg-6">
-			<div class="avatar center-block">
-				<img src="img/JTG_fiddle.jpg">
-			</div>
-		</div>
-		<div class="hidden-xs col-sm-3 col-md-3 col-lg-3">
-			<br>
-			<!-- SOCIAL MEDIA LINKS -->
-			<div class="social pull-right">
+			<div class="social">
 				<a href="https://drive.google.com/file/d/0B9b2obkDLa_bUHk2X0EweEVWS2s/view?usp=sharing"><i class="fa fa-graduation-cap"></i></a>
 				<a href="https://github.com/bigdrumr"><i class="fa fa-github"></i></a>
 				<a href="mailto:jtgrffn@gmail.com"><i class="fa fa-envelope"></i></a>
 				<a href="https://www.facebook.com/people/Terry-Griffin/100006449551389"><i class="fa fa-facebook-square"></i></a>
 			</div>
-		</div>
-	</div>
+		</nav>
 
-	<div class="container">
-		<div class="row text-center">
-			<div class="col-xs-12">
-				<h2 class="grid-title one">Recent UI/UX Projects</h2>
-			</div>
-			<div class="col-xs-12 col-sm-4 col-md-3 col-md-offset-1 offset">
-				<a class="lead" href="/old-time-throwdown">
-					<div class="main-item one">
-						Oldtime Throwdown <small class="help-block">Desktop</small>
-					</div>
-				</a>
-			</div>
-			<div class="col-xs-12 col-sm-4 col-md-3">
-				<a class="lead" href="http://100xteam.townsqua.re/" target="_blank">
-					<div class="main-item one">
-						100X Team <small class="help-block">Responsive</small>
-					</div>
-				</a>
-			</div>
-			<div class="col-xs-12 col-sm-4 col-md-3">
-				<a class="lead" href="#">
-					<div class="main-item one">
-						Townsqua.re <small class="help-block">Forthcoming</small>
-					</div>
-				</a>
-			</div>
+		<div id="intro">
 
-			<!-- <div class="col-xs-12">
-				<h2 class="grid-title two clearfix"> <small class="help-block">(Forthcoming)</small></h2>
-			</div> -->
-			<div class="col-xs-12 col-sm-6 col-md-3">
-				<a class="lead" href=""> <!-- /HTML-CSS -->
-					<div class="main-item">
-						HTML/CSS Skills
-					</div>
-				</a>
-			</div>
-			<div class="col-xs-12 col-sm-6 col-md-3">
-				<a class="lead" href="#">
-					<div class="main-item">
-						AngularJS Skills 
-					</div>
-				</a>
-			</div>
-			<div class="col-xs-12 col-sm-6 col-md-3">
-				<a class="lead" href="#">
-					<div class="main-item">
-						jQuery Skills
-					</div>
-				</a>
-			</div>
-			<div class="col-xs-12 col-sm-6 col-md-3">
-				<a class="lead" href="#">
-					<div class="main-item">
-						Raw Javascript Skills
-					</div>
-				</a>
-			</div>				
+			<p>
+				I'm a budding front-end web developer, whose focus is responsive, mobile-first design. I wish to enhance my skills for designing and building elegant, light-weight, sexy UIs with JavaScript and CSS. My practice is young, but I'm a life wonderer and self-teacher of many skills, including automotive and appliance repair, playing several musical instruments, and safely felling trees.
+			</p>
+			
 		</div>
-	</div>
+
+	</section>
+
+	<section class="bg-image">
+		<img src="img/birches.jpg">
+	</section>
+
+	<section class="my-work">
+		<h2>A Smattering of Skills</h2>
+
+		<div class="exhibit whole">
+			<!-- SAVE/SPLIT BUTTONS -->
+			<p data-height="268" data-theme-id="0" data-slug-hash="zGOKrV" data-default-tab="result" data-user="JTGriffn" class='codepen'>See the Pen <a href='http://codepen.io/JTGriffn/pen/zGOKrV/'>zGOKrV</a> by John T Griffin (<a href='http://codepen.io/JTGriffn'>@JTGriffn</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+			<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+		</div>
+
+		<div class="exhibit whole">
+			<p data-height="268" data-theme-id="0" data-slug-hash="JddLgZ" data-default-tab="result" data-user="JTGriffn" class='codepen'>See the Pen <a href='http://codepen.io/JTGriffn/pen/JddLgZ/'>JddLgZ</a> by John T Griffin (<a href='http://codepen.io/JTGriffn'>@JTGriffn</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+			<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+		</div>
+
+	</section>
+
+	<section class="bg-image">
+		<img src="img/birches.jpg">
+	</section>
+
+	<aside id="build-alert"><p>This spot's still mid-build.<small>Take a look around the girders.</small></p></aside>
+
 	</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 </html>

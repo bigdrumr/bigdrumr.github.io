@@ -1,0 +1,140 @@
+
+/*=======Z-INDEX=======*/
+#save {
+  z-index: 0;
+}
+.save.parent {
+  z-index: 3500;
+}
+.save.option {
+  z-index: 3000;
+}
+.complete.parent {
+  z-index: 200;
+}
+.complete.option {
+  z-index: 150;
+}
+
+
+
+/*=======PARENT BLOCKS=======*/
+#save::after {
+  content: " ";
+  display:block;
+  clear: both;
+}
+.save-buttons.main { 
+  width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
+
+/*=======BUTTONS=======*/
+#save li {
+  width: 72px;
+  padding: 0;
+  margin: 0; 
+  display: block;
+  float: left;
+  position:relative;
+  text-align: center;
+  line-height: 0.8;
+}
+#save a {
+  display: block;
+  text-decoration: none;
+}
+.save-btn {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 16px auto;
+  background: #CCC; 
+  border-radius: 100%;
+  position: relative;
+}
+.option .save-btn{
+  width: 54px;
+  height: 54px;
+  padding: 0;
+}
+.save-btn i,
+.plus-sign {
+  margin: 0;
+  color: #EEE;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.save-btn i {
+  font-size: 1.7em;
+  transform: translate(-50%, -50%);
+}
+.option .save-btn i {
+  font-size: 1.4em;
+  transform: translate(-85%, -50%);
+}
+.option .save-btn span.plus-sign {
+  font-size: 1.4em;
+  transform: translate(60%, -50%);
+}
+.cancel .save-btn {
+  background: rgb(229,48,64)
+}
+.cancel small {
+  color: rgb(229,48,64)
+}
+.save .save-btn {
+  background: rgb(20,124,178)
+}
+.save small {
+  color: rgb(20,124,178)
+}
+.complete .save-btn {
+  background: rgb(1,152,37)
+}
+.complete small {
+  color: rgb(1,152,37)
+}
+
+
+
+
+/*=======BUTTON TRANSITIONS=======*/
+
+#save .option {  
+  opacity: 0;
+}
+.save.option.left {
+  transform: translate(72px, 0);
+}
+.save.option.right {
+  transform: translate(-72px, 0);
+}
+.complete.option.left {
+  transform: translate(-72px, 0);
+}
+.complete.option.right {
+  transform: translate(-144px, 0);
+}
+
+.save.option.left.active{
+  transform: translate(144px, 0);
+  opacity: 1;
+}
+.save.option.right.active {
+  transform: translate(72px, 0);
+  opacity: 1;
+}
+
+.complete.option.active {
+  transform: translate(0, 0);
+  opacity: 1;    
+}
+li.inactive .save-btn {
+  background: #CCC;
+}
+li.inactive small {
+  color: #CCC;
+}
