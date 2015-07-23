@@ -22,6 +22,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/evergreens.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 153903,
+		"inputAbbreviatedPath": "\/img\/evergreens.jpg",
+		"outputAbbreviatedPath": "\/img\/evergreens.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/fall.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 223446,
+		"inputAbbreviatedPath": "\/img\/fall.jpg",
+		"outputAbbreviatedPath": "\/img\/fall.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/JTG_fiddle.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -29,6 +51,17 @@
 		"initialSize": 26106,
 		"inputAbbreviatedPath": "\/img\/JTG_fiddle.jpg",
 		"outputAbbreviatedPath": "\/img\/JTG_fiddle.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/night-sky.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 107322,
+		"inputAbbreviatedPath": "\/img\/night-sky.jpg",
+		"outputAbbreviatedPath": "\/img\/night-sky.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

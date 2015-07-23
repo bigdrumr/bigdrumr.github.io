@@ -25,6 +25,7 @@ body {
   background-color: #48484d;
   color: #FFF;
   font-family: 'Lato', sans-serif;
+  text-align: center;
 }
 section {
   position: relative;
@@ -38,6 +39,10 @@ section.content {
 }
 section.bg-image {
   padding: 0;
+}
+section .section-title {
+  margin: 1em;
+  font-size: 3em;
 }
 img {
   width: 100%;
@@ -55,6 +60,10 @@ h4 {
 p {
   font-size: 2em;
 }
+small {
+  display: block;
+  font-weight: 100;
+}
 .fa {
   color: #fff;
   margin-left: 5px;
@@ -70,6 +79,7 @@ p {
 /*navbar*/
 #navbar {
   position: relative;
+  text-align: left;
 }
 #navbar:after {
   content: ' ';
@@ -78,20 +88,27 @@ p {
 }
 .title {
   float: left;
+  padding-right: 1em;
+  margin-right: 1em;
+  border-right: 1px solid #fff;
 }
+.title small {
+  font-size: 0.5em;
+}
+.social {
+  padding-top: 0.5em;
+}
+/*end navbar*/
 .avatar {
-  width: 100px;
-  position: absolute;
+  width: 120px;
+  position: relative;
   left: 50%;
-  margin-left: -50px;
+  margin-top: 4em;
+  margin-left: -60px;
 }
 .avatar img {
   border-radius: 50%;
 }
-.social {
-  float: right;
-}
-/*end navbar*/
 #intro {
   padding: 2em;
 }
@@ -100,7 +117,7 @@ p {
   text-align: justify;
 }
 .exhibit {
-  margin: 1em 0.25%;
+  margin: 0.5em 0.25%;
   display: inline-block;
   padding: 2%;
   border: 1px solid #797982;
@@ -108,6 +125,10 @@ p {
 }
 .exhibit:lastchild {
   margin-right: 0;
+}
+.exhibit.whole {
+  width: 100%;
+  margin: 0.5em 0;
 }
 .exhibit.half {
   width: 49%;
@@ -193,12 +214,9 @@ p {
 #build-alert {
   position: fixed;
   top: 0;
-  left: 20%;
-  padding: 2em;
+  right: 0;
+  padding: 1em;
 }
 #build-alert p {
   font-size: 1em;
-}
-#build-alert small {
-  display: block;
 }
