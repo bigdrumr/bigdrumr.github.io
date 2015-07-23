@@ -33,6 +33,9 @@ section {
   height: 94vh;
   background: #48484d;
 }
+section.content {
+  height: auto;
+}
 section.bg-image {
   padding: 0;
 }
@@ -99,11 +102,14 @@ p {
 .exhibit {
   margin: 1em 0.25%;
   display: inline-block;
-  padding: 1em;
+  padding: 2%;
   border: 1px solid #797982;
   border-radius: 5px;
 }
-.exhibit.whole {
+.exhibit:lastchild {
+  margin-right: 0;
+}
+.exhibit.half {
   width: 49%;
 }
 #progress {
