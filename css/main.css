@@ -34,16 +34,6 @@ section {
   height: 94vh;
   background: #48484d;
 }
-section.content {
-  height: auto;
-}
-section.bg-image {
-  padding: 0;
-}
-section .section-title {
-  margin: 1em;
-  font-size: 3em;
-}
 img {
   width: 100%;
 }
@@ -109,12 +99,33 @@ small {
 .avatar img {
   border-radius: 50%;
 }
+/*SECTION TYPES*/
 #intro {
   padding: 2em;
 }
 #intro p {
   margin: 2em;
   text-align: justify;
+}
+.main-stuff {
+  height: auto;
+}
+.main-stuff p {
+  margin: 2em;
+  text-align: justify;
+  font-size: 2em;
+  font-weight: 100;
+}
+.dummie {
+  padding: 10em 0;
+}
+.bg-image {
+  padding: 0;
+}
+/*end section types*/
+.section-title {
+  margin: 1em;
+  font-size: 3em;
 }
 .exhibit {
   margin: 0.5em 0.25%;
