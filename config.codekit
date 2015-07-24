@@ -11,6 +11,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/img\/100x_logo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 19039,
+		"inputAbbreviatedPath": "\/img\/100x_logo.png",
+		"outputAbbreviatedPath": "\/img\/100x_logo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/birches.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -62,6 +73,17 @@
 		"initialSize": 107322,
 		"inputAbbreviatedPath": "\/img\/night-sky.jpg",
 		"outputAbbreviatedPath": "\/img\/night-sky.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/soco_logo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5350,
+		"inputAbbreviatedPath": "\/img\/soco_logo.png",
+		"outputAbbreviatedPath": "\/img\/soco_logo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

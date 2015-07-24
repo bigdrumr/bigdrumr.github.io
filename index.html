@@ -2,9 +2,12 @@
 <html>
     <head>
     	<meta charset="utf-8" />
-    	<title>Terry's Portfolio</title>
+    	<title>Terry Griffin | UI/UX Dev</title>
 
     	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
     	<!-- less.js -->
     	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js"></script>
 		<!-- FontAwesome CDN -->
@@ -15,22 +18,22 @@
 	</head>
 	<body>
 
+	<nav id="navbar">
+		<div class="title">
+			<h1>I'm Terry Griffin</h1>
+			<p><small>Budding UI/UX Developer</small></p>
+		</div>
+
+
+		<div class="social">
+			<a href="https://drive.google.com/file/d/0B1AaA75irNChY3dUaVRnV2p1dm8/view?usp=sharing"><i class="fa fa-graduation-cap"></i></a>
+			<a href="https://github.com/bigdrumr"><i class="fa fa-github"></i></a>
+			<a href="mailto:jtgrffn@gmail.com"><i class="fa fa-envelope"></i></a>
+			<a href="https://www.facebook.com/people/Terry-Griffin/100006449551389"><i class="fa fa-facebook-square"></i></a>
+		</div>
+	</nav>
+
 	<section class="masthead">
-
-		<nav id="navbar">
-			<div class="title">
-				<h1>I'm Terry Griffin</h1>
-				<p><small>Budding UI/UX Developer</small></p>
-			</div>
-
-
-			<div class="social">
-				<a href="https://drive.google.com/file/d/0B9b2obkDLa_bUHk2X0EweEVWS2s/view?usp=sharing"><i class="fa fa-graduation-cap"></i></a>
-				<a href="https://github.com/bigdrumr"><i class="fa fa-github"></i></a>
-				<a href="mailto:jtgrffn@gmail.com"><i class="fa fa-envelope"></i></a>
-				<a href="https://www.facebook.com/people/Terry-Griffin/100006449551389"><i class="fa fa-facebook-square"></i></a>
-			</div>
-		</nav>
 
 		<div class="avatar">
 			<img src="img/JTG_fiddle.jpg">
@@ -40,7 +43,6 @@
 			<p>
 				I'm a budding front-end web developer, whose focus is responsive, mobile-first design. I wish to enhance my skills for designing and building elegant, light-weight, sexy UIs with JavaScript and CSS. My practice is young, but I'm a life wonderer and self-teacher of many skills, including automotive and appliance repair, playing several musical instruments, and safely felling trees.
 			</p>
-			
 		</div>
 
 	</section>
@@ -53,7 +55,7 @@
 		<h2 class="section-title">A Smattering of Builds</h2>
 
 		<!-- SAVE/SPLIT BUTTONS -->
-		<div class="exhibit half">
+		<div class="exhibit half hide-xs">
 			<p data-height="268" data-theme-id="0" data-slug-hash="zGOKrV" data-default-tab="result" data-user="JTGriffn" class='codepen'>See the Pen <a href='http://codepen.io/JTGriffn/pen/zGOKrV/'>zGOKrV</a> by John T Griffin (<a href='http://codepen.io/JTGriffn'>@JTGriffn</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 			<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 		</div>
@@ -67,6 +69,12 @@
 		<!-- CUSTOM RADIOS/CHECKBOXES -->
 		<div class="exhibit half">
 			<p data-height="268" data-theme-id="0" data-slug-hash="waMWEN" data-default-tab="result" data-user="JTGriffn" class='codepen'>See the Pen <a href='http://codepen.io/JTGriffn/pen/waMWEN/'>waMWEN</a> by John T Griffin (<a href='http://codepen.io/JTGriffn'>@JTGriffn</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+			<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+		</div>
+
+		<!-- COLLAPSABLE ELEMENT -->
+		<div class="exhibit half">
+			<p data-height="268" data-theme-id="0" data-slug-hash="GJYNog" data-default-tab="result" data-user="JTGriffn" class='codepen'>See the Pen <a href='http://codepen.io/JTGriffn/pen/GJYNog/'>GJYNog</a> by John T Griffin (<a href='http://codepen.io/JTGriffn'>@JTGriffn</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 			<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 		</div>
 
@@ -89,9 +97,34 @@
 	<section class="main-stuff">
 		<h2 class="section-title">Experience</h2>
 
-		<p>
-			I'm a budding front-end web developer, whose focus is responsive, mobile-first design. I wish to enhance my skills for designing and building elegant, light-weight, sexy UIs with JavaScript and CSS. My practice is young, but I'm a life wonderer and self-teacher of many skills, including automotive and appliance repair, playing several musical instruments, and safely felling trees.
-		</p>
+		<div class="row">
+			<h3 class="row-title">Mobile-first Design and Build Basics <span>| 100X </span><small>6 months<span class="dot"></span>Madison, WI</small></h3>
+			<div class="block-image">
+				<img src="img/100x_logo.png">
+			</div>
+			<p class="text-block">
+				The 100X guys brought me aboard to skin a prototype for a full-M.E.A.N stack commercial CMS app. I also built the 100X team website, and wired in parallax scrolling for their app's marketing site. Working with the 100X guys gave me tremendous experience with GIT, LESS, Bootstrap, AngularJS, and dependencies management at the commandline. 
+			</p>
+			<p class="bullet">{ ... } PSD-to-HTML workflow</p>
+			<p class="bullet">{ ... } Styling w/ Bootstrap and LESS.js</p>
+			<p class="bullet">{ ... } HTML Templating with AngularJS and HandlebarsJS</p>
+			<p class="bullet">{ ... } Bi-weekly iterative builds and daily scrums</p>
+			<p class="bullet">{ ... } Worked onsite and remotely</p>
+		</div>
+		<div class="row">
+			<h3 class="row-title">Forms, Functionality, and Beautiful Architecture  <span>| SocialCompany</span><small>5 months<span class="dot"></span>Madison, WI</small></h3>
+			<div class="block-image">
+				<img src="img/soco_logo.png">
+			</div>
+			<p class="text-block">
+				SocialCompany brought me in as the second-half of a two-man dev team. We built a successful front-end prototype of a new/improved form entry workflow. 
+			</p>
+			<p class="bullet">{ ... } PSD-to-HTML workflow</p>
+			<p class="bullet">{ ... } Styling w/ Bootstrap and LESS.js</p>
+			<p class="bullet">{ ... } HTML Templating with AngularJS and HandlebarsJS</p>
+			<p class="bullet">{ ... } Bi-weekly iterative builds and daily scrums</p>
+			<p class="bullet">{ ... } Worked onsite and remotely</p>
+		</div>
 	</section>
 
 	<aside id="build-alert"><p>This spot's still mid-build.<small>Take a look around the girders.</small></p></aside>
