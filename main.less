@@ -52,7 +52,10 @@ a {
 }
 h1,h2,h3,h4 {margin:0;padding:0;}
 
-p {font-size: 2em;}
+p {
+	font-size: 2em;
+	text-align: justify;
+}
 small {
 	display: block;
 	font-weight: 100;
@@ -81,20 +84,28 @@ small {
 		display: block;
 		clear: both;
 	}
+	p {font-size: 1em}
+	small {
+		font-size: 0.75em;
+	}
 }
 .title {
 	float: left;
 	padding-right: 1em;
 	margin-right: 1em;
 	border-right: 1px solid #fff;
-
-	small {
-		font-size: 0.5em;
-	}
 }
 .social {
+	float: left;
 	padding-top: 0.5em;
 }
+
+.availability {
+	margin-left: 4em;
+	width: 250px;
+	float: left;
+}
+
 /*end navbar*/
 
 .avatar {
@@ -121,8 +132,6 @@ small {
 	height: auto;
 
 	p {
-		text-align: justify;
-		font-size: 2em;
 		font-weight: 100;
 
 		&.text-block {
@@ -154,6 +163,7 @@ small {
 .section-title {
 	font-size: 3em;
 	text-align: center;
+	margin-bottom: 1em;
 }
 .row-title {
 	font-size: 2em;
@@ -189,7 +199,7 @@ small {
 	border: @border;
 	border-radius: @corners;
 
-	&:lastchild {
+	&:last-child {
 		margin-right:0;
 	}
 
@@ -220,6 +230,9 @@ small {
 	}
 }
 @media (max-width: 768px) {
+	section {
+		padding: 2em 2em;
+	}
 	.masthead {
 		height: auto;
 
@@ -239,6 +252,14 @@ small {
 			height: auto;
 		}
 	}
+	p {
+		text-align: left;
+	}
+	.bullet {
+		font-size: 1.5em;
+		margin-bottom: 0.5em;
+		margin-left: 0.5em;
+	}
 }
 @media (max-width: 735px) {
 	#navbar {
@@ -247,14 +268,20 @@ small {
 	}
 	#build-alert {
 		width: 100%;
-		text-align: center;
 		top: 4em;
 		position: absolute;
+
+		& p {
+			text-align: center;
+		}
 	}
 	.avatar {
 		margin-top: 8em;
 	}
 	.hide-xs {
 		display: none;
+	}
+	.bullet {
+		margin-left: 0;
 	}
 }

@@ -48,6 +48,7 @@ h4 {
 }
 p {
   font-size: 2em;
+  text-align: justify;
 }
 small {
   display: block;
@@ -76,17 +77,26 @@ small {
   display: block;
   clear: both;
 }
+#navbar p {
+  font-size: 1em;
+}
+#navbar small {
+  font-size: 0.75em;
+}
 .title {
   float: left;
   padding-right: 1em;
   margin-right: 1em;
   border-right: 1px solid #fff;
 }
-.title small {
-  font-size: 0.5em;
-}
 .social {
+  float: left;
   padding-top: 0.5em;
+}
+.availability {
+  margin-left: 4em;
+  width: 250px;
+  float: left;
 }
 /*end navbar*/
 .avatar {
@@ -110,8 +120,6 @@ small {
   height: auto;
 }
 .main-stuff p {
-  text-align: justify;
-  font-size: 2em;
   font-weight: 100;
 }
 .main-stuff p.text-block {
@@ -138,6 +146,7 @@ small {
 .section-title {
   font-size: 3em;
   text-align: center;
+  margin-bottom: 1em;
 }
 .row-title {
   font-size: 2em;
@@ -170,7 +179,7 @@ small {
   border: 1px solid #797982;
   border-radius: 5px;
 }
-.exhibit:lastchild {
+.exhibit:last-child {
   margin-right: 0;
 }
 .exhibit.whole {
@@ -196,6 +205,9 @@ small {
   }
 }
 @media (max-width: 768px) {
+  section {
+    padding: 2em 2em;
+  }
   .masthead {
     height: auto;
   }
@@ -214,6 +226,14 @@ small {
     width: 1024px;
     height: auto;
   }
+  p {
+    text-align: left;
+  }
+  .bullet {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    margin-left: 0.5em;
+  }
 }
 @media (max-width: 735px) {
   #navbar {
@@ -222,14 +242,19 @@ small {
   }
   #build-alert {
     width: 100%;
-    text-align: center;
     top: 4em;
     position: absolute;
+  }
+  #build-alert p {
+    text-align: center;
   }
   .avatar {
     margin-top: 8em;
   }
   .hide-xs {
     display: none;
+  }
+  .bullet {
+    margin-left: 0;
   }
 }
