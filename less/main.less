@@ -3,144 +3,283 @@
 	by Terry Griffin (a.k.a bigdrumr)
 	February 2015
 */
+
+/* ===
+	VARIABLES
+/=== */
+
+@bg-color: #48484D;
+@successGreen: rgb(141, 203, 137);
+@border: 1px solid lighten(@bg-color, 20%);
+@corners: 5px;
+@transition: all 0.2s ease;
+
+
+/* ===
+	IMPORTS
+/=== */
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
+
+/* ===
+	LAYOUT
+/=== */
+
+* {
+	box-sizing: border-box;
+	transition: @transition;
+	margin: 0;
+	padding: 0;
+}
 body {
-	background-color: #48484D;
+	background-color: @bg-color;
 	color: #FFF;
+	font-family: 'Lato', sans-serif;
+}
+section {
+	position: relative;
+	padding: 2em 4em;
+	width: 100%;
+	height: 94vh;
+	background: @bg-color;
 }
 img {
 	width: 100%;
-	padding: 5px;
-	border-radius: 50%;	
 }
 a {
-	text-decoration: none !important;
+	text-decoration: none;
 }
-i.fa {
+h1,h2,h3,h4 {margin:0;padding:0;}
+
+p {
+	font-size: 2em;
+	text-align: justify;
+}
+small {
+	display: block;
+	font-weight: 100;
+}
+.fa {
+	color: #fff;
 	margin-left: 5px;
-	color: #FFF !important;
 	font-size: 24px;
-	transition: all 0.2s ease;
+
+	&:hover {
+		opacity: 0.8;
+	}
 }
-i.fa:hover {
-	opacity: 0.8;
+.btn {
+	background-color: inherit;
+	border: 1px solid #6EF046;
 }
+
+/*navbar*/
+#navbar {
+	position: relative;
+	text-align: left;
+	margin: 1em;
+	&:after {
+		content: ' ';
+		display: block;
+		clear: both;
+	}
+	p {font-size: 1em}
+	small {
+		font-size: 0.75em;
+	}
+}
+.title {
+	float: left;
+	padding-right: 1em;
+	margin-right: 1em;
+	border-right: 1px solid #fff;
+}
+.social {
+	float: left;
+	padding-top: 0.5em;
+}
+
+.availability {
+	margin-left: 4em;
+	width: 250px;
+	float: left;
+}
+
+/*end navbar*/
+
 .avatar {
+	width: 120px;
+	position: relative;
+	left: 50%;
+	margin-top: 4em;
+	margin-left: -60px;
+
+	img {
+		border-radius: 50%;	
+	}
+}
+
+#intro {
+	margin-top: 4em;
+	p {
+		text-align: justify;
+	}
+}
+
+/*SECTION TYPES*/
+.main-stuff {
+	height: auto;
+
+	p {
+		font-weight: 100;
+
+		&.text-block {
+			margin-bottom: 1em;
+		}
+	}
+}
+.row {
+	margin: 1em 0;
+
+	&:after {
+		content: ' ';
+		display: block;
+		clear:both;
+	}
+}
+.bg-image {
+	padding: 0;
+}
+/*end section types*/
+
+.block-image {
 	width: 20%;
-	margin-top: 20px;
-	margin-bottom: 40px;	
-}
-div.btn {
-	background-color: inherit;
-	border: 1px solid #6EF046;
+	margin-left: 2em;
+	float: right;
+	border: @border;
 }
 
-.name-tag {
-	padding: 30px 0;
+.section-title {
+	font-size: 3em;
+	text-align: center;
+	margin-bottom: 1em;
 }
-.grid-title {
-	margin: 20px 0;
-}
-.main-item {
-	height: 112px;
-	padding: 40px 0;
-	margin: 10px 0;
-	border: 1px solid #6EF046;
-	background-color: inherit;
-	transition: all 0.15s ease;
-}
-a .main-item {
-	color: #FFF;
-	transition: all 0.15s ease;
-}
-.main-item:hover,
-div.btn:hover,
-div.btn:active,
-button.btn-primarydiv.btn {
-	background-color: #994D25;	
-	outline: 0;
-}
-a .main-item:hover {
-	color: #48484D;
-}
-.main-item:active {
-	background-color: #2C2C33;
-}
-a .main-item:active {
-	color: #48484D;
-}
+.row-title {
+	font-size: 2em;
+	margin-top: 1em;
+	margin-bottom: 0.5em;
 
-/*COLUMN OFFSET for CONTENT: Recent UI/UX Projects*/
-div.col-sm-3:nth-child(2) {
-	margin-left: calc(8.33333333% + 50px);
+	& span {
+		font-weight: 100;
+	}
+
+	& small {
+		font-size: 50%;
+	}
+
+	& .dot {
+		position: relative;
+		bottom: 4px;
+		&:before {
+			font-family: FontAwesome;
+			content: '\f111';
+			font-size: 4px;
+			margin: 0 2em;
+		}
+	}
 }
+.bullet {
+	margin-left: 2em;
+}
+.exhibit {
+	margin: 0.5em 0.25%;
+	display: inline-block; 
+	padding: 2%;
+	border: @border;
+	border-radius: @corners;
 
+	&:last-child {
+		margin-right:0;
+	}
 
-/*===============
-	RESPONSIVE OFFSETS*/
-/* Smartphones (portrait) ----------- */
-@media only screen and (max-width : 320px) {
-	.avatar {
+	&.whole {
 		width: 100%;
-		margin-top: 20px;
+		margin:0.5em 0;
 	}
-	i.fa {
-		margin: 5px;
-		font-size: 30px;
-	}
-	.grid-title.one {
-		margin-top: 40px;
+	&.half {
+		width: 49.25%;
 	}
 }
-/* Smartphones (landscape) ----------- */
-@media only screen and (min-width : 321px) {
-	.avatar {
-		width: 50%;
-		margin-top: 20px;
-		float: right;
-	}
-	i.fa {
-		font-size: 30px;
-	}
-	.grid-title.one {
-		margin-top: 40px;
+
+#build-alert {
+	position: fixed;
+	top: 0;
+	right: 0;
+	padding: 1em;
+
+	p {
+		font-size: 1em;
 	}
 }
-/* iPads (portrait) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-	.avatar {
-		width: 20%;
-		margin-top: 20px;
-		margin-bottom: 40px;
-		float: none;	
-	}
-	.grid-title.one {
-		margin-top: 80px;
+
+@media (max-width: 1024px) {
+	.exhibit.half {
+		float: none;
+		width: 100%;
 	}
 }
-/* iPads (landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
-	.avatar {
-		width: 20%;
-		margin-top: 20px;
-		margin-bottom: 40px;
-		float: none;	
+@media (max-width: 768px) {
+	section {
+		padding: 2em 2em;
 	}
-	.grid-title.one {
-		margin-top: 80px;
+	.masthead {
+		height: auto;
+
+		#intro {
+			font-size: 1em;
+			font-weight: 100;
+			p {
+				margin: 2em 0em;
+			}
+		}
 	}
-	.offset {
-		margin-left: calc(8.33333333% + 50px);
+	.bg-image {
+		height: 50vh;
+		overflow: hidden;
+		img {
+			width: 1024px;
+			height: auto;
+		}
+	}
+	p {
+		text-align: left;
+	}
+	.bullet {
+		font-size: 1.5em;
+		margin-bottom: 0.5em;
+		margin-left: 0.5em;
 	}
 }
-/* Desktops and laptops ----------- */
-@media only screen and (min-width : 1224px) {
-	.avatar {
-		width: 20%;
-		margin-top: 20px;
-		margin-bottom: 40px;
-		float: none;	
+@media (max-width: 735px) {
+	#navbar {
+		width: 350px;
+		margin: 0 auto;
 	}
-	.offset {
-		margin-left: calc(8.33333333% + 50px);
+	#build-alert {
+		width: 100%;
+		top: 4em;
+		position: absolute;
+
+		& p {
+			text-align: center;
+		}
+	}
+	.avatar {
+		margin-top: 8em;
+	}
+	.hide-xs {
+		display: none;
+	}
+	.bullet {
+		margin-left: 0;
 	}
 }

@@ -1,0 +1,259 @@
+/*
+	Stylesheet | bigdrumr.github.io
+	by Terry Griffin (a.k.a bigdrumr)
+	February 2015
+*/
+/* ===
+	VARIABLES
+/=== */
+/* ===
+	IMPORTS
+/=== */
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
+/* ===
+	LAYOUT
+/=== */
+* {
+  box-sizing: border-box;
+  -webkit-transition: all 0.2s ease;
+          transition: all 0.2s ease;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #48484d;
+  color: #FFF;
+  font-family: 'Lato', sans-serif;
+}
+section {
+  position: relative;
+  padding: 2em 4em;
+  width: 100%;
+  height: 94vh;
+  background: #48484d;
+}
+img {
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+p {
+  font-size: 2em;
+  text-align: justify;
+}
+small {
+  display: block;
+  font-weight: 100;
+}
+.fa {
+  color: #fff;
+  margin-left: 5px;
+  font-size: 24px;
+}
+.fa:hover {
+  opacity: 0.8;
+}
+.btn {
+  background-color: inherit;
+  border: 1px solid #6EF046;
+}
+/*navbar*/
+#navbar {
+  position: relative;
+  text-align: left;
+  margin: 1em;
+}
+#navbar:after {
+  content: ' ';
+  display: block;
+  clear: both;
+}
+#navbar p {
+  font-size: 1em;
+}
+#navbar small {
+  font-size: 0.75em;
+}
+.title {
+  float: left;
+  padding-right: 1em;
+  margin-right: 1em;
+  border-right: 1px solid #fff;
+}
+.social {
+  float: left;
+  padding-top: 0.5em;
+}
+.availability {
+  margin-left: 4em;
+  width: 250px;
+  float: left;
+}
+/*end navbar*/
+.avatar {
+  width: 120px;
+  position: relative;
+  left: 50%;
+  margin-top: 4em;
+  margin-left: -60px;
+}
+.avatar img {
+  border-radius: 50%;
+}
+#intro {
+  margin-top: 4em;
+}
+#intro p {
+  text-align: justify;
+}
+/*SECTION TYPES*/
+.main-stuff {
+  height: auto;
+}
+.main-stuff p {
+  font-weight: 100;
+}
+.main-stuff p.text-block {
+  margin-bottom: 1em;
+}
+.row {
+  margin: 1em 0;
+}
+.row:after {
+  content: ' ';
+  display: block;
+  clear: both;
+}
+.bg-image {
+  padding: 0;
+}
+/*end section types*/
+.block-image {
+  width: 20%;
+  margin-left: 2em;
+  float: right;
+  border: 1px solid #797982;
+}
+.section-title {
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 1em;
+}
+.row-title {
+  font-size: 2em;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+.row-title span {
+  font-weight: 100;
+}
+.row-title small {
+  font-size: 50%;
+}
+.row-title .dot {
+  position: relative;
+  bottom: 4px;
+}
+.row-title .dot:before {
+  font-family: FontAwesome;
+  content: '\f111';
+  font-size: 4px;
+  margin: 0 2em;
+}
+.bullet {
+  margin-left: 2em;
+}
+.exhibit {
+  margin: 0.5em 0.25%;
+  display: inline-block;
+  padding: 2%;
+  border: 1px solid #797982;
+  border-radius: 5px;
+}
+.exhibit:last-child {
+  margin-right: 0;
+}
+.exhibit.whole {
+  width: 100%;
+  margin: 0.5em 0;
+}
+.exhibit.half {
+  width: 49.25%;
+}
+#build-alert {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 1em;
+}
+#build-alert p {
+  font-size: 1em;
+}
+@media (max-width: 1024px) {
+  .exhibit.half {
+    float: none;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  section {
+    padding: 2em 2em;
+  }
+  .masthead {
+    height: auto;
+  }
+  .masthead #intro {
+    font-size: 1em;
+    font-weight: 100;
+  }
+  .masthead #intro p {
+    margin: 2em 0em;
+  }
+  .bg-image {
+    height: 50vh;
+    overflow: hidden;
+  }
+  .bg-image img {
+    width: 1024px;
+    height: auto;
+  }
+  p {
+    text-align: left;
+  }
+  .bullet {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    margin-left: 0.5em;
+  }
+}
+@media (max-width: 735px) {
+  #navbar {
+    width: 350px;
+    margin: 0 auto;
+  }
+  #build-alert {
+    width: 100%;
+    top: 4em;
+    position: absolute;
+  }
+  #build-alert p {
+    text-align: center;
+  }
+  .avatar {
+    margin-top: 8em;
+  }
+  .hide-xs {
+    display: none;
+  }
+  .bullet {
+    margin-left: 0;
+  }
+}
