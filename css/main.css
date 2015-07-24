@@ -3,143 +3,256 @@
 	by Terry Griffin (a.k.a bigdrumr)
 	February 2015
 */
+/* ===
+	VARIABLES
+/=== */
+/* ===
+	IMPORTS
+/=== */
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
+/* ===
+	LAYOUT
+/=== */
+* {
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+  margin: 0;
+  padding: 0;
+}
 body {
-  background-color: #48484D;
+  background-color: #48484d;
   color: #FFF;
+  font-family: 'Lato', sans-serif;
+}
+section {
+  position: relative;
+  padding: 2em 4em;
+  width: 100%;
+  height: 94vh;
+  background: #48484d;
 }
 img {
   width: 100%;
-  padding: 5px;
-  border-radius: 50%;
 }
 a {
-  text-decoration: none !important;
+  text-decoration: none;
 }
-i.fa {
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+p {
+  font-size: 2em;
+  text-align: justify;
+}
+small {
+  display: block;
+  font-weight: 100;
+}
+.fa {
+  color: #fff;
   margin-left: 5px;
-  color: #FFF !important;
   font-size: 24px;
-  -webkit-transition: all 0.2s ease;
-          transition: all 0.2s ease;
 }
-i.fa:hover {
+.fa:hover {
   opacity: 0.8;
 }
+.btn {
+  background-color: inherit;
+  border: 1px solid #6EF046;
+}
+/*navbar*/
+#navbar {
+  position: relative;
+  text-align: left;
+  margin: 1em;
+}
+#navbar:after {
+  content: ' ';
+  display: block;
+  clear: both;
+}
+#navbar p {
+  font-size: 1em;
+}
+#navbar small {
+  font-size: 0.75em;
+}
+.title {
+  float: left;
+  padding-right: 1em;
+  margin-right: 1em;
+  border-right: 1px solid #fff;
+}
+.social {
+  float: left;
+  padding-top: 0.5em;
+}
+.availability {
+  margin-left: 4em;
+  width: 250px;
+  float: left;
+}
+/*end navbar*/
 .avatar {
+  width: 120px;
+  position: relative;
+  left: 50%;
+  margin-top: 4em;
+  margin-left: -60px;
+}
+.avatar img {
+  border-radius: 50%;
+}
+#intro {
+  margin-top: 4em;
+}
+#intro p {
+  text-align: justify;
+}
+/*SECTION TYPES*/
+.main-stuff {
+  height: auto;
+}
+.main-stuff p {
+  font-weight: 100;
+}
+.main-stuff p.text-block {
+  margin-bottom: 1em;
+}
+.row {
+  margin: 1em 0;
+}
+.row:after {
+  content: ' ';
+  display: block;
+  clear: both;
+}
+.bg-image {
+  padding: 0;
+}
+/*end section types*/
+.block-image {
   width: 20%;
-  margin-top: 20px;
-  margin-bottom: 40px;
+  margin-left: 2em;
+  float: right;
+  border: 1px solid #797982;
 }
-div.btn {
-  background-color: inherit;
-  border: 1px solid #6EF046;
+.section-title {
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 1em;
 }
-.name-tag {
-  padding: 30px 0;
+.row-title {
+  font-size: 2em;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
 }
-.grid-title {
-  margin: 20px 0;
+.row-title span {
+  font-weight: 100;
 }
-.main-item {
-  height: 112px;
-  padding: 40px 0;
-  margin: 10px 0;
-  border: 1px solid #6EF046;
-  background-color: inherit;
-  -webkit-transition: all 0.15s ease;
-          transition: all 0.15s ease;
+.row-title small {
+  font-size: 50%;
 }
-a .main-item {
-  color: #FFF;
-  -webkit-transition: all 0.15s ease;
-          transition: all 0.15s ease;
+.row-title .dot {
+  position: relative;
+  bottom: 4px;
 }
-.main-item:hover,
-div.btn:hover,
-div.btn:active,
-button.btn-primarydiv.btn {
-  background-color: #994D25;
-  outline: 0;
+.row-title .dot:before {
+  font-family: FontAwesome;
+  content: '\f111';
+  font-size: 4px;
+  margin: 0 2em;
 }
-a .main-item:hover {
-  color: #48484D;
+.bullet {
+  margin-left: 2em;
 }
-.main-item:active {
-  background-color: #2C2C33;
+.exhibit {
+  margin: 0.5em 0.25%;
+  display: inline-block;
+  padding: 2%;
+  border: 1px solid #797982;
+  border-radius: 5px;
 }
-a .main-item:active {
-  color: #48484D;
+.exhibit:last-child {
+  margin-right: 0;
 }
-/*COLUMN OFFSET for CONTENT: Recent UI/UX Projects*/
-div.col-sm-3:nth-child(2) {
-  margin-left: calc(58.33333333%);
+.exhibit.whole {
+  width: 100%;
+  margin: 0.5em 0;
 }
-/*===============
-	RESPONSIVE OFFSETS*/
-/* Smartphones (portrait) ----------- */
-@media only screen and (max-width: 320px) {
-  .avatar {
+.exhibit.half {
+  width: 49.25%;
+}
+#build-alert {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 1em;
+}
+#build-alert p {
+  font-size: 1em;
+}
+@media (max-width: 1024px) {
+  .exhibit.half {
+    float: none;
     width: 100%;
-    margin-top: 20px;
-  }
-  i.fa {
-    margin: 5px;
-    font-size: 30px;
-  }
-  .grid-title.one {
-    margin-top: 40px;
   }
 }
-/* Smartphones (landscape) ----------- */
-@media only screen and (min-width: 321px) {
-  .avatar {
-    width: 50%;
-    margin-top: 20px;
-    float: right;
+@media (max-width: 768px) {
+  section {
+    padding: 2em 2em;
   }
-  i.fa {
-    font-size: 30px;
+  .masthead {
+    height: auto;
   }
-  .grid-title.one {
-    margin-top: 40px;
+  .masthead #intro {
+    font-size: 1em;
+    font-weight: 100;
   }
-}
-/* iPads (portrait) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-  .avatar {
-    width: 20%;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    float: none;
+  .masthead #intro p {
+    margin: 2em 0em;
   }
-  .grid-title.one {
-    margin-top: 80px;
+  .bg-image {
+    height: 50vh;
+    overflow: hidden;
   }
-}
-/* iPads (landscape) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-  .avatar {
-    width: 20%;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    float: none;
+  .bg-image img {
+    width: 1024px;
+    height: auto;
   }
-  .grid-title.one {
-    margin-top: 80px;
+  p {
+    text-align: left;
   }
-  .offset {
-    margin-left: calc(58.33333333%);
+  .bullet {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    margin-left: 0.5em;
   }
 }
-/* Desktops and laptops ----------- */
-@media only screen and (min-width: 1224px) {
-  .avatar {
-    width: 20%;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    float: none;
+@media (max-width: 735px) {
+  #navbar {
+    width: 350px;
+    margin: 0 auto;
   }
-  .offset {
-    margin-left: calc(58.33333333%);
+  #build-alert {
+    width: 100%;
+    top: 4em;
+    position: absolute;
+  }
+  #build-alert p {
+    text-align: center;
+  }
+  .avatar {
+    margin-top: 8em;
+  }
+  .hide-xs {
+    display: none;
+  }
+  .bullet {
+    margin-left: 0;
   }
 }
