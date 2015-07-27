@@ -56,7 +56,7 @@ p {
 }
 small {
 	display: block;
-	font-weight: 100;
+	font-weight: 200;
 }
 .fa {
 	color: #fff;
@@ -87,21 +87,22 @@ small {
 		font-size: 0.75em;
 	}
 }
+.title,
+.social {
+	display: inline-block;
+}
 .title {
-	float: left;
 	padding-right: 1em;
 	margin-right: 1em;
 	border-right: 1px solid #fff;
 }
 .social {
-	float: left;
-	padding-top: 0.5em;
+	position: relative;
+	top:-0.65em;
 }
 
 .availability {
-	margin-left: 4em;
-	width: 250px;
-	float: left;
+	margin-top: 1em;
 }
 
 /*end navbar*/
@@ -110,7 +111,7 @@ small {
 	width: 120px;
 	position: relative;
 	left: 50%;
-	margin-top: 4em;
+	margin-top: 2em;
 	margin-left: -60px;
 
 	img {
@@ -262,8 +263,9 @@ small {
 @media (max-width: 735px) {
 	#navbar {
 		width: 350px;
-		margin: 0 auto;
+		margin: 1em auto;
 	}
+
 	#build-alert {
 		width: 100%;
 		top: 4em;
@@ -274,12 +276,22 @@ small {
 		}
 	}
 	.avatar {
-		margin-top: 8em;
+		margin-top: 2em;
 	}
 	.hide-xs {
 		display: none;
 	}
 	.bullet {
 		margin-left: 0;
+	}
+}
+
+@media (max-width:360px) {
+	body {
+		font-size: 70%;
+	}
+	#navbar {
+		width: 280px;
+		margin: 1em auto;		
 	}
 }
