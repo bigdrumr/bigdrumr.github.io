@@ -24,6 +24,7 @@ body {
   background-color: #48484d;
   color: #FFF;
   font-family: 'Lato', sans-serif;
+  z-index: 0;
 }
 section {
   position: relative;
@@ -50,7 +51,7 @@ p {
 }
 small {
   display: block;
-  font-weight: 200;
+  font-weight: 300;
 }
 .fa {
   color: #fff;
@@ -66,7 +67,8 @@ small {
 }
 /*navbar*/
 #navbar {
-  position: relative;
+  z-index: 1000;
+  position: absolute;
   text-align: left;
   margin: 1em;
 }
@@ -98,11 +100,14 @@ small {
   margin-top: 1em;
 }
 /*end navbar*/
+.masthead {
+  height: 98vh;
+}
 .avatar {
   width: 120px;
   position: relative;
   left: 50%;
-  margin-top: 2em;
+  margin-top: 8em;
   margin-left: -60px;
 }
 .avatar img {
@@ -134,6 +139,7 @@ small {
 }
 .bg-image {
   padding: 0;
+  height: 80vh;
 }
 /*end section types*/
 .block-image {
@@ -238,8 +244,7 @@ small {
 }
 @media (max-width: 735px) {
   #navbar {
-    width: 350px;
-    margin: 1em auto;
+    position: relative;
   }
   #build-alert {
     width: 100%;
