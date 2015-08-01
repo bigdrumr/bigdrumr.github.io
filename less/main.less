@@ -12,6 +12,7 @@
 @successGreen: rgb(141, 203, 137);
 @border: 1px solid lighten(@bg-color, 20%);
 @shadow-regular: 0px 0px 8px -2px rgba(0,0,0,0.75);
+@shadow-active: 0px 0px 4px -1px rgba(0,0,0,0.75);
 @corners: 2px;
 @transition: all 0.2s ease;
 
@@ -42,55 +43,7 @@ section {
 	padding: 2em 4em;
 	width: 100%;
 	background: @bg-color;
-}
-.modal {
-	position: absolute;
-	top: 4em;
-	left:50%;
-	margin-left: -40vw;
-	width: 80vw;
-	background: #fff;
-
-	border-radius: @corners;
-	box-shadow: @shadow-regular;
-	transition: height 0.2s ease-out;
-
-	&.close {
-		height: 0;
-	}
-
-	&.active {
-		height: 400px;
-
-	}
-
-	& .close-btn {
-		width: 30px;
-		height: 30px;
-		background: #fff;
-		border-radius: 100px;
-		border: 2px solid @bg-color;
-		outline: none;
-		position:absolute;
-		top: -1em;
-		right: -1em;
-		&:after {                    
-			font-family: FontAwesome;
-			content: '\f00d';
-			font-size: 1.5em;
-			color: @bg-color;
-			text-align: center;
-			line-height: 1.5;
-		}
-
-		&:hover { 
-			box-shadow: @shadow-regular;
-		}
-		&:active { 
-			opacity: 0.75;
-		}
-
-	}
+	z-index: 500;
 }
 img {
 	width: 100%;
@@ -208,8 +161,68 @@ small {
 .bg-image {
 	padding: 0;
 	height: 80vh;
+	z-index: 200;
+
+	img {
+		transition: transform 0s;
+	}
 }
 /*end section types*/
+
+/*MODAL POPUP*/
+.modal {
+	display: block;
+	z-index: 2000;
+	position: absolute;
+	top: 4em;
+	left:50%;
+	width: 80vw;
+	margin-left: -40vw;
+	background: #fff;
+	color: #333;
+
+	border-radius: @corners;
+	box-shadow: @shadow-regular;
+	transition: height 0.2s ease-out;
+
+	& .remove {
+		display: none;
+	}
+	&.close {
+		height: 0;
+	}
+	&.active {
+		height: 400px;
+	}
+
+	& .close-btn {
+		width: 30px;
+		height: 30px;
+		background: #fff;
+		border-radius: 100px;
+		border: 2px solid @bg-color;
+		outline: none;
+		position:absolute;
+		top: -1em;
+		right: -1em;
+		
+		& .fa-close { 
+			margin-left: 0px;
+			font-size: 2em;
+			color: @bg-color;
+			text-align: center;
+			vertical-align: middle;
+		}
+
+		&:hover { 
+			box-shadow: @shadow-regular;
+		}
+		&:active { 
+			box-shadow: @shadow-active;
+		}
+	}
+}
+/*end modal popup*/
 
 .block-image {
 	width: 20%;

@@ -10,6 +10,8 @@
 
     	<!-- less.js -->
     	<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js"></script>
+    	<!-- Skrollr parallax -->
+    	<script src="//cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
 		<!-- FontAwesome CDN -->
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 		<!-- Custom CSS -->
@@ -29,8 +31,8 @@
 			<!-- <a href="https://drive.google.com/file/d/0B1AaA75irNChY3dUaVRnV2p1dm8/view?usp=sharing" target="_blank"><i class="fa fa-graduation-cap"></i></a> -->
 			<div id="resume-btn" class="soc-link"><i class="fa fa-graduation-cap"></i></div>
 			<a href="https://github.com/bigdrumr" class="soc-link" target="_blank"><i class="fa fa-github"></i></a>
-			<a href="mailto:jtgrffn@gmail.com" class="soc-link"><i class="fa fa-envelope"></i></a>
 			<a href="http://codepen.io/J_Terry_Griffin/" class="soc-link" target="_blank"><i class="fa fa-codepen"></i></a>
+			<a href="mailto:jtgrffn@gmail.com" class="soc-link"><i class="fa fa-envelope"></i></a>
 		</div>
 
 		<div class="availability">
@@ -53,8 +55,12 @@
 
 	</section>
 
-	<section class="bg-image hide-xs">
-		<img src="img/web-field.jpg">
+	<section id="img1" class="bg-image hide-xs">
+		<img src="img/web-field.jpg"
+			data-target="#img1"
+			data-bottom-top="transform:translate(0%,-14%)"
+			data--100p-top="transform:translate(0%,14%)"
+		>
 	</section>
 
 	<section class="main-stuff hide-xs">
@@ -96,8 +102,12 @@
 		</div>
 	</section>
 
-	<section class="bg-image">
-		<img src="img/fall.jpg">
+	<section id="img2" class="bg-image">
+		<img src="img/fall.jpg"
+			data-target="#img2"
+			data-bottom-top="transform:translate(0%,-14%)"
+			data--100p-top="transform:translate(0%,14%)"
+		>
 	</section>
 
 	<section class="main-stuff">
@@ -142,12 +152,21 @@
 		</div>
 	</section>
 
+	<section class="bg-image">
+		<img src="img/night-sky.jpg"
+			data-bottom-top="transform:translate(0%,-14%)"
+			data-top="transform:translate(0%,0%)"
+		>
+	</section>
 
 	<aside id="resume" class="modal close">
-		<p>HELLO!</p>
+		<div class="modal-content remove">
+			<button class="close-btn"><i class="fa fa-close"></i></button>
 
-		<button class="close-btn"></button>
-		
+			<div class="modal-body">
+				<img src="img/JTG_Resume.png">
+			</div>
+		</div>	
 	</aside>
 
 	<!-- <aside id="build-alert"><p>This spot's still mid-build.<small>Take a look around the girders.</small></p></aside> -->
