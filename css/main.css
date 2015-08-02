@@ -125,6 +125,7 @@ small {
 /*SECTION TYPES*/
 .main-stuff {
   height: auto;
+  box-shadow: 0px 0px 8px -2px rgba(0, 0, 0, 0.75);
 }
 .main-stuff p {
   font-weight: 100;
@@ -147,7 +148,8 @@ small {
   padding: 0;
   z-index: 100;
 }
-.plx {
+.plx,
+.bg-overlay {
   width: 100%;
   height: 100%;
   border: 0;
@@ -155,7 +157,7 @@ small {
   -webkit-transition: -webkit-transform 0s;
           transition: transform 0s;
 }
-.plx img {
+.scaled {
   -webkit-transform: scale(1.2, 1.2);
       -ms-transform: scale(1.2, 1.2);
           transform: scale(1.2, 1.2);

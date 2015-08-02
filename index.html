@@ -56,12 +56,19 @@
 	<section id="img1" class="bg-image hide-xs">
 
 		<div class="plx"
-			data-bottom-top="transform:translateY(-100px);"
-			data-top-bottom="transform:translateY(0px);"
+			data-bottom-top="transform:translateY(-20%);"
+			data-top-bottom="transform:translateY(0%);"
 			data-anchor-target="#img1"
 		>
 			<img src="img/web-field.jpg">
 		</div>
+
+		<div class="bg-overlay"
+			data-bottom-top="background:rgba(0,0,0,0.5)"
+			data-center="background:rgba(0,0,0,0)"
+			data-top-bottom="background:rgba(0,0,0,0)"
+			data-anchor-target="#img1"
+		></div>
 		
 	</section>
 
@@ -106,13 +113,22 @@
 
 	<section id="img2" class="bg-image"
 	>
+		<!-- parallax image -->
 		<div class="plx"
-			data-bottom-top="transform:translateY(-100px);"
-			data-top-bottom="transform:translateY(0px);"
+			data-bottom-top="transform:translateY(-20%);"
+			data-top-bottom="transform:translateY(0%);"
 			data-anchor-target="#img2"
 		>
 			<img src="img/fall.jpg">
 		</div>
+
+		<!-- parallax shade -->
+		<div class="bg-overlay"
+			data-bottom-top="background:rgba(0,0,0,0.5)"
+			data-center="background:rgba(0,0,0,0)"
+			data-top-bottom="background:rgba(0,0,0,0)"
+			data-anchor-target="#img2"
+		></div>
 	</section>
 
 	<section class="main-stuff">
@@ -163,8 +179,16 @@
 			data-top="transform:translateY(0%)"
 			data-anchor-target="#img3"
 		>
-			<img src="img/night-sky.jpg">
+			<img src="img/leichen.jpg" class="scaled">
 		</div>
+		<div class="bg-overlay"
+			data-bottom-top="background:rgba(0,0,0,0)"
+			data-center="background:rgba(0,0,0,0.5)"
+			data-anchor-target="#img3"
+		></div>
+		
+	</section>
+	<section class="footer">
 		
 	</section>
 
@@ -186,9 +210,8 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript">
-
 		window.setTimeout(function(){
-			if ($(window).width() > 750) {var s = skrollr.init({forceHeight:false});}
+			if ($(window).width() > 750) {s = skrollr.init({forceHeight:false});}
 		},1000);
 	</script>
 </html>
