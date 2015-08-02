@@ -146,7 +146,6 @@ small {
   overflow: hidden;
   padding: 0;
   z-index: 100;
-  position: relative;
 }
 .plx {
   width: 100%;

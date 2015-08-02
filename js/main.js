@@ -12,6 +12,3 @@ $('.close-btn').click(function(){
 	$('.modal-content').addClass('remove');
 	$('.modal').addClass('close');
 });
-
-// INIT SKROLLR PARALLAX
-skrollr.init();

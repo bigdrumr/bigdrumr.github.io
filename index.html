@@ -159,8 +159,8 @@
 
 	<section id="img3" class="bg-image">
 		<div class="plx"
-			data-bottom-top="transform:translateY(-100px)"
-			data-top="transform:translateY(0px)"
+			data-bottom-top="transform:translateY(-20%)"
+			data-top="transform:translateY(0%)"
 			data-anchor-target="#img3"
 		>
 			<img src="img/night-sky.jpg">
@@ -186,7 +186,9 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript">
-		var s = skrollr.init();
-		s.refresh($('.bg-image'));
+
+		window.setTimeout(function(){
+			if ($(window).width() > 750) {var s = skrollr.init({forceHeight:false});}
+		},1000);
 	</script>
 </html>
