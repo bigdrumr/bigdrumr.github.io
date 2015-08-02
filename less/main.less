@@ -183,54 +183,73 @@ small {
 
 /*MODAL POPUP*/
 .modal {
-	display: block;
-	z-index: 2000;
+	width: 100%;
+	height: 100%;
 	position: absolute;
-	top: 4em;
-	left:50%;
-	width: 80vw;
-	margin-left: -40vw;
-	background: #fff;
-	color: #333;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.75);
+	z-index: 1900;
+	overflow-y: scroll;
+	display: none;
 
-	border-radius: @corners;
-	box-shadow: @shadow-regular;
-	transition: height 0.2s ease-out;
-
-	& .remove {
-		display: none;
-	}
-	&.close {
-		height: 0;
-	}
 	&.active {
-		height: 400px;
+		display: block;
 	}
 
-	& .close-btn {
-		width: 30px;
-		height: 30px;
+	& .modal-content {
+		position: absolute;
+		top: 4em;
+		left: 50%;
+		width: 80vw;
+		height: 0px;
+		margin-left: -40vw;
 		background: #fff;
-		border-radius: 100px;
-		border: 2px solid @bg-color;
-		outline: none;
-		position:absolute;
-		top: -1em;
-		right: -1em;
-		
-		& .fa-close { 
-			margin-left: 0px;
-			font-size: 2em;
-			color: @bg-color;
-			text-align: center;
-			vertical-align: middle;
+		color: #333;
+		border-radius: @corners;
+		box-shadow: @shadow-regular;
+		z-index: 2000;
+		transition: all 0.4s ease-out;
+
+		/*&.close {
+			height: 0px;
+		}*/
+		&.active {
+			height: auto;
 		}
 
-		&:hover { 
-			box-shadow: @shadow-regular;
-		}
-		&:active { 
+		& .close-btn {
+			width: 3.5em;
+			height: 3.5em;
+			background: #fff;
+			border-radius: 100px;
+			border: 2px solid @bg-color;
 			box-shadow: @shadow-active;
+			outline:none;
+			position:absolute;
+			top: -1em;
+			right: -1em;
+			z-index: 2000;
+			transition: @transition;
+			
+
+			&:after {
+				display: block;
+				font-family:FontAwesome;
+				content:'\f00d';
+				font-size: 2.25em;
+				color: @bg-color;
+				margin-bottom: 0em;
+				margin-left: 0em;
+				z-index: inherit;
+			}
+
+			&:hover { 
+				box-shadow: @shadow-regular;
+			}
+			&:active { 
+				box-shadow: @shadow-active;
+			}
 		}
 	}
 }

@@ -1,14 +1,31 @@
 
+
+// MODAL
 $('#resume-btn').click(function(){
-	$('.modal').removeClass('close');
 	$('.modal').addClass('active');
-	setTimeout(function() {
-		$('.modal-content').removeClass('remove');
-	},100);
-	
+	$('body').css('overflow','hidden');
+
+	setTimeout(function(){
+		$('.modal-content').removeClass('close');
+		$('.modal-content').addClass('active');
+	},200);	
 });
+
 $('.close-btn').click(function(){
-	$('.modal').removeClass('active');
-	$('.modal-content').addClass('remove');
-	$('.modal').addClass('close');
+	$('.modal-content').removeClass('active');
+	$('.modal-content').addClass('close');
+	setTimeout(function(){
+		$('.modal').removeClass('active');
+		$('body').css('overflow','initial');
+	},200);
 });
+
+$('.modal').click(function(){
+	$('.modal-content').removeClass('active');
+	$('.modal-content').addClass('close');
+	setTimeout(function(){
+		$('.modal').removeClass('active');
+		$('body').css('overflow','initial');
+	},200);
+});
+// END MODAL
