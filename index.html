@@ -10,8 +10,6 @@
 
     	<!-- less.js -->
     	<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js"></script>
-    	<!-- Skrollr parallax -->
-    	<script src="//cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
 		<!-- FontAwesome CDN -->
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 		<!-- Custom CSS -->
@@ -56,11 +54,15 @@
 	</section>
 
 	<section id="img1" class="bg-image hide-xs">
-		<img src="img/web-field.jpg"
-			data-target="#img1"
-			data-bottom-top="transform:translate(0%,-14%)"
-			data--100p-top="transform:translate(0%,14%)"
+
+		<div class="plx"
+			data-bottom-top="transform:translateY(-100px);"
+			data-top-bottom="transform:translateY(0px);"
+			data-anchor-target="#img1"
 		>
+			<img src="img/web-field.jpg">
+		</div>
+		
 	</section>
 
 	<section class="main-stuff hide-xs">
@@ -102,12 +104,15 @@
 		</div>
 	</section>
 
-	<section id="img2" class="bg-image">
-		<img src="img/fall.jpg"
-			data-target="#img2"
-			data-bottom-top="transform:translate(0%,-14%)"
-			data--100p-top="transform:translate(0%,14%)"
+	<section id="img2" class="bg-image"
+	>
+		<div class="plx"
+			data-bottom-top="transform:translateY(-100px);"
+			data-top-bottom="transform:translateY(0px);"
+			data-anchor-target="#img2"
 		>
+			<img src="img/fall.jpg">
+		</div>
 	</section>
 
 	<section class="main-stuff">
@@ -152,11 +157,15 @@
 		</div>
 	</section>
 
-	<section class="bg-image">
-		<img src="img/night-sky.jpg"
-			data-bottom-top="transform:translate(0%,-14%)"
-			data-top="transform:translate(0%,0%)"
+	<section id="img3" class="bg-image">
+		<div class="plx"
+			data-bottom-top="transform:translateY(-100px)"
+			data-top="transform:translateY(0px)"
+			data-anchor-target="#img3"
 		>
+			<img src="img/night-sky.jpg">
+		</div>
+		
 	</section>
 
 	<aside id="resume" class="modal close">
@@ -173,5 +182,11 @@
 
 	</body>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<!-- Skrollr parallax -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript">
+		var s = skrollr.init();
+		s.refresh($('.bg-image'));
+	</script>
 </html>

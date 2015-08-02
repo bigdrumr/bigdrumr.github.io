@@ -14,6 +14,4 @@ $('.close-btn').click(function(){
 });
 
 // INIT SKROLLR PARALLAX
-skrollr.init(
-	{smoothScrolling:true}
-);
+skrollr.init();
