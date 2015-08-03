@@ -357,6 +357,10 @@ small {
   }
 }
 @media (max-width: 736px) {
+  .modal .modal-content {
+    width: 92vw;
+    margin-left: -46vw;
+  }
   .bg-overlay {
     background: rgba(0, 0, 0, 0.8);
   }
