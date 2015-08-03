@@ -30,5 +30,5 @@ $('.resume-btn').click(function(){
 });
 
 popOut('.close-btn');
-popOut('.modal');
+popOut('.modal-overlay');
 // END MODAL
