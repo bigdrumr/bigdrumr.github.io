@@ -202,7 +202,8 @@ small {
 		top: 4em;
 		left: 50%;
 		width: 80vw;
-		height: 0px;
+		height: auto;
+		margin-top: 2000px;
 		margin-left: -40vw;
 		background: #fff;
 		color: #333;
@@ -211,11 +212,11 @@ small {
 		z-index: 2000;
 		transition: all 0.4s ease-out;
 
-		/*&.close {
-			height: 0px;
-		}*/
+		&.close {
+			margin-top: -2000px;
+		}
 		&.active {
-			height: auto;
+			margin-top: 0px;
 		}
 
 		& .close-btn {

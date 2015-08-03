@@ -1,31 +1,31 @@
 
 
 // MODAL
-$('#resume-btn').click(function(){
+function popIn() {
 	$('.modal').addClass('active');
 	$('body').css('overflow','hidden');
 
 	setTimeout(function(){
 		$('.modal-content').removeClass('close');
 		$('.modal-content').addClass('active');
-	},200);	
+	},50);	
+
+}
+function popOut(el) {
+	$(el).click(function(){
+		$('.modal-content').removeClass('active');
+		$('.modal-content').addClass('close');
+		setTimeout(function(){
+			$('.modal').removeClass('active');
+			$('body').css('overflow','initial');
+		},200);
+	});
+}
+
+$('.resume-btn').click(function(){
+	popIn();
 });
 
-$('.close-btn').click(function(){
-	$('.modal-content').removeClass('active');
-	$('.modal-content').addClass('close');
-	setTimeout(function(){
-		$('.modal').removeClass('active');
-		$('body').css('overflow','initial');
-	},200);
-});
-
-$('.modal').click(function(){
-	$('.modal-content').removeClass('active');
-	$('.modal-content').addClass('close');
-	setTimeout(function(){
-		$('.modal').removeClass('active');
-		$('body').css('overflow','initial');
-	},200);
-});
+popOut('.close-btn');
+popOut('.modal');
 // END MODAL
