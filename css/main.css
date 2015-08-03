@@ -189,18 +189,20 @@ small {
 /*end section types*/
 /*MODAL POPUP*/
 .modal {
+  display: none;
+}
+.modal.active {
+  display: block;
+}
+.modal .modal-overlay {
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.75);
-  z-index: 1900;
   overflow-y: scroll;
-  display: none;
-}
-.modal.active {
-  display: block;
+  z-index: 1900;
 }
 .modal .modal-content {
   position: absolute;
