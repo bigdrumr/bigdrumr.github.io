@@ -2,26 +2,25 @@
 <html>
     <head>
     	<meta charset="utf-8" />
+    	<!-- Page Title -->
     	<title>Terry Griffin | UI/UX Dev</title>
-
+    	<!-- Normalize Viewport -->
     	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-
+    	<!-- Favicon -->
     	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
-
 		<!-- FontAwesome CDN -->
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 		<!-- Custom CSS -->
         <link rel="stylesheet" type="text/css" href="css/main.css"/>
 
 	</head>
-	<body>
-
+	<!-- Body Content -->
+	<body id="skrollr-body">
 	<nav id="navbar">
 		<div class="title">
 			<h1>I'm Terry Griffin</h1>
 			<p><small>UI/UX Developer</small></p>
 		</div>
-
 
 		<div class="social">
 			<!-- <a href="https://drive.google.com/file/d/0B1AaA75irNChY3dUaVRnV2p1dm8/view?usp=sharing" target="_blank"><i class="fa fa-graduation-cap"></i></a> -->
@@ -99,7 +98,7 @@
 
 		<!-- UNLOCK/ENABLE BUTTON -->
 		<div class="exhibit whole">
-			<p data-height="400" data-theme-id="0" data-slug-hash="EjvLGL" data-default-tab="result" data-user="JTGriffn" class='codepen'>See the Pen <a href='http://codepen.io/JTGriffn/pen/EjvLGL/'>EjvLGL</a> by John T Griffin (<a href='http://codepen.io/JTGriffn'>@JTGriffn</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+			<p data-height="450" data-theme-id="0" data-slug-hash="EjvLGL" data-default-tab="result" data-user="JTGriffn" class='codepen'>See the Pen <a href='http://codepen.io/JTGriffn/pen/EjvLGL/'>EjvLGL</a> by John T Griffin (<a href='http://codepen.io/JTGriffn'>@JTGriffn</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 			<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 		</div>
 
@@ -222,7 +221,12 @@
 	<script type="text/javascript">
 		// init skrollr
 		window.setTimeout(function(){
-			if ($(window).width() > 750) {s = skrollr.init({forceHeight:false});}
+			if ($(window).width() > 750) {
+				s = skrollr.init({
+					forceHeight:false,
+					mobileDeceleration:0.15
+				});
+			}
 		},1000);
 	</script>
 </html>

@@ -310,10 +310,12 @@ small {
 }
 .exhibit.whole {
   width: 100%;
+  min-height: 481.234px;
   margin: 0.5em 0;
 }
 .exhibit.half {
   width: 49.25%;
+  min-height: 299.234px;
 }
 #build-alert {
   position: fixed;
@@ -346,10 +348,10 @@ small {
   }
   .bg-image {
     overflow: hidden;
+    height: 50vh;
   }
   .bg-image img {
     width: 1024px;
-    height: auto;
   }
   p {
     text-align: left;
