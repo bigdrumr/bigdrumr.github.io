@@ -60,6 +60,7 @@ small {
 	display: block;
 	font-weight: 300;
 }
+
 .fa {
 	color: #fff;
 	margin-left: 5px;
@@ -70,6 +71,9 @@ small {
 		opacity: 0.8;
 	}
 }
+
+
+
 .btn {
 	background-color: inherit;
 	border: 1px solid #6EF046;
@@ -244,7 +248,7 @@ small {
 		left: 50%;
 		width: 80vw;
 		height: auto;
-		margin-top: 2000px;
+		margin-top: 0px;
 		margin-left: -40vw;
 		background: #fff;
 		color: #333;
@@ -254,10 +258,12 @@ small {
 		transition: all 0.4s ease-out;
 
 		&.close {
-			margin-top: -2000px;
+			/*margin-top: -2000px;*/
+			transform:translate(0px,-2000px);
 		}
 		&.active {
-			margin-top: 0px;
+			/*margin-top: 0px;*/
+			transform:translate(0px,0px);
 		}
 
 		& .close-btn {
